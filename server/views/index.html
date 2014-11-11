@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body class="page">
+
+  <div class="images">
+    % for image in images:
+      <a class="images_item" href="{{ image.url }}">
+        <img src="{{ image.preview }}" alt="" />
+      </a>
+    % end
+  </div>
+
+</body>
+</html>
